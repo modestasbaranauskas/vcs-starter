@@ -1,0 +1,397 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header-section {
+	background-image: url("../images/background_01-min.jpg"), url("../images/background_02-min.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+
+.header-container {
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	/* padding: 100px 0; */
+}
+
+.header-column a{
+	/* LEARN MORE*/
+	border: 2px solid #fff;
+	padding: 20px 36px 18px;
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.3333;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.summary-container,
+.skills-container,
+.education-section,
+.portfolio-section {
+	width: 1180px;
+	padding: 99px 0px 96px 0px;
+	margin: 0 auto;
+	background-color: #fff;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.summary-column {
+	width: calc(33.3333% - 35.6666px);
+
+}
+
+h1 {
+	color: #fff;
+	font-size: 3.75rem;
+	font-weight: 700;
+	line-height: 0.4;
+	/* margin: 0px 0px 49px 0px; */
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #566366;
+	font-size: 1.875rem;
+	font-weight: 700;
+	line-height: 0.8;
+	margin: 0px 0px 49px 0px;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #566366;
+	font-size: 1.375rem;
+	font-weight: 700;
+	line-height: 1.0909;
+	margin: 0px 0px 27px 0px;
+	text-transform: uppercase;
+}
+
+p {
+	color: #919191;
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.6666;
+	margin: 0px 0px 42px 0px;
+}
+
+.service-icon i {
+	font-size: 2.5625rem;
+	color: #2ecc71;
+}
+
+.about-container,
+.resume-section,
+.quotes-section {
+	background-color: #f2f2f1;
+	width: 100%;
+}
+
+/* .resume-section::after {
+	content: '';
+	position: absolute;
+	right: 48.5%;
+	text-align: center;
+	top: -25px;
+	border-left: 25px solid rgba(0, 0, 0, 0);
+	border-right: 25px solid rgba(0, 0, 0, 0);
+	border-bottom: 25px solid #F0F0F0;
+} */
+
+.about-service {
+	max-width: 680px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.about-column {
+	flex-direction: column;
+	padding: 100px 0px 0px 100px;
+	width: 60%;
+
+}
+
+.about-text {
+	max-width: 680px;
+}
+
+.about-service-column {
+	width: 50%;
+}
+
+.about-column-photo {
+	width: 40%;
+}
+
+.about-column-photo img {
+	width: 100%;
+	display: block;
+}
+
+.service-icon {
+	max-width: 41px;
+	margin-right: 33px;
+}
+
+.main-nav-section {
+	background-color:#252e30;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	position: sticky;
+	top: 0;
+}
+.main-nav-container {
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 1180px;
+}
+
+.nav-menu-list {
+	list-style-type: none;
+}
+
+.nav-menu-list a {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.875;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 40px;
+}
+
+.nav-menu-list a:hover {
+	color: #2ecc71;
+}
+
+.main-nav-logo {
+	margin-top: 10px;
+}
+
+.skills-section {
+	background-color: #fff;
+}
+
+.skills-text-column,
+.skills-info-column {
+	width: calc(50% - 46px);
+	justify-content: space-between;
+}
+
+.skills-text-column a,
+.resume-container a {
+	border: 2px solid #2ecc71;
+	padding: 20px 36px 18px;
+	color: #2ecc71;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.3333;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.skills-info-text{
+	margin: 40px 0px 19px 0px;
+}
+
+.skills-info-block progress {
+	width: 100%;
+	background-color: #2ecc71;
+}
+
+.resume-container,
+.quotes-container {
+	max-width: 1020px;
+	padding: 99px 0px 96px 0px;
+	margin: 0 auto;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.resume-container p {
+	text-align: center;
+}
+
+.education-container {
+	width: 1180px;
+}
+
+.education-column {
+	width: 50%;
+}
+
+.education-info-column span {
+	font-weight: 700;
+}
+
+p.rating {
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 2.1428;
+	padding: 3px 0px 3px 10px;
+	max-width: 71px;
+}
+
+p.quote-text {
+	color: #919191;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 1.5;
+	text-align: center;
+}
+
+p.author-name {
+	color: #566366;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 2;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.portfolio-container {
+	max-width: 1020px;
+    margin: 0 auto;
+    justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.gallery-container {
+	flex-wrap: wrap;
+	max-width: 1180px;
+	margin: 0 auto;
+	flex-direction: row;
+    justify-content: center;
+}
+
+/* .gallery-column {
+	width: 100%;
+    flex-wrap: wrap;
+} */
+
+/* .gallery-photo {
+	padding: 10px;
+} */
+
+img {
+	display: block;
+}
+
+.gallery-column	:hover {
+	opacity: 0.75;
+}
+
+.gallery-column {
+	max-width: 366px;
+	margin: 25px 1px 0px 25px;
+}
+
+/* Footer */
+
+.footer-section {
+	background-color: #191f21;
+}
+
+.footer-container {
+	flex-wrap: wrap;
+	max-width: 1180px;
+	margin: 0 auto;
+	flex-direction: column;
+	text-align: center;
+}
+
+.copyright-column p{
+	color: #4b5456;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 2.1428;
+	text-transform: uppercase;
+}
+
+.social-media-icon i{
+	color: #191f21;
+	font-size: 1.25rem;
+	background-color: #4b5456;
+	border-radius: 50px;
+	display: inline-block;
+	line-height: 1.3;
+	padding: 5px;
+}
+
+.social-media-icon a {
+	text-decoration: none;
+}
+
+.education-hr {
+	margin-bottom: 100px;
+}
+
+/* Contact */
+.contact-section {
+	background-color: #252e30;
+	padding: 99px 0px 96px 0px;
+}
+.contact-container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.contact-column {
+	width: 50%;
+}
+
+.contact-column h2 {
+	color: #fff;
+}
+
+.contact-form textarea,
+.form-field {
+	width: 100%;
+	background-color: #4b5456;
+	display: block;
+	border: none;
+	padding: 10px 0 10px;
+}
+
+.contact-label {
+	color: #fff;
+	padding-top: 39px;
+}
+
+.submit-button {
+	padding: 20px 36px 18px;
+	background-color: #191f21;
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.3333;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+}
