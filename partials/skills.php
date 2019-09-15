@@ -19,43 +19,27 @@
         </div>
         <div class="skills-info-column">
             <div class="skills-info-block">
-                <div class="skills">
-                    <h3 class="skills-info-text">Photoshop</h3>
-                    <progress value="90" max="100">90%</progress>
-                    <style> 
-                    .skills:nth-child(1) progress[value]:after {
-                        left: 90%;
-                    }
-                    </style>
-                </div>
-                <div class="skills">
-                    <h3 class="skills-info-text">Illustrator</h3>
-                    <progress value="80" max="100">80%</progress>
-                    <style> 
-                    .skills:nth-child(2) progress[value]:after {
-                        left: 80%;
-                    }
-                    </style>
-                </div>
-                <div class="skills">
-                    <h3 class="skills-info-text">HTML / CSS</h3>
-                    <progress value="90" max="100">90%</progress>
-                    <style> 
-                    .skills:nth-child(3) progress[value]:after {
-                        left: 90%;
-                    }
-                    </style>
-                </div>
-                <div class="skills">
-                    <h3 class="skills-info-text">PHP / MYSQL</h3>
-                    <progress value="70" max="100">70%</progress>
-                    <style>
-                    .skills:nth-child(4) progress[value]:after {
-                        left: 70%;
-                    }
-                    </style>
-                </div>
-                
+            <?php
+                if(have_rows('ms_skills_repeater')):
+                    while(have_rows('ms_skills_repeater')):
+                        the_row();
+
+                        $progress = get_sub_field('value');
+                        // dump($progress);
+                        ?>
+                        <div class="skills">
+                            <h3 class="skills-info-text"><?php the_sub_field('heading'); ?></h3>
+                            <progress value="<?php echo $progress ?>" max="100"><?php echo $progress ?>%</progress>
+                            <style> 
+                            .skills:nth-child(<?php the_sub_field('row_number') ?>) progress[value]:after {
+                                left: <?php echo $progress ?>%;
+                            }
+                            </style>
+                        </div>
+                        <?php
+                    endwhile;
+                endif;
+            ?> 
             </div>
         </div>
     </div>	
