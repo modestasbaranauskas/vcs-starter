@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
 	<!-- Required meta tags -->
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Google Fonts -->
@@ -13,10 +13,10 @@
 	<script src="https://kit.fontawesome.com/dffe01776f.js"></script>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/assets/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php bloginfo('template_url') ?>/assets/favicon/favicon.ico" type="image/x-icon">
 
-	<title>MoBar Design</title>
+	<title><?php wp_title(); ?></title>
 
 	<?php wp_head(); ?>
 </head>
