@@ -12,9 +12,9 @@
                 <h1><?php the_field('h_heading') ?></h1>
                 <?php
                 $link = get_field('h_link');
-                dump($link);
+                // dump($link);
                 ?>
-				<a class="js-scroll-trigger" href="#summary">Learn more</a>
+				<a class="js-scroll-trigger" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
 			</div>
 		</div>
 	</section>
