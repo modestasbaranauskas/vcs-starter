@@ -108,6 +108,7 @@ if( function_exists('acf_add_options_page') ) {
 // Image size
 add_image_size('logo', 120, 60, false);
 add_image_size('about_photo', 610, 760, true);
+add_image_size('gallery_image', 390, 320, true);
 
 // WP NAV WALKER
 class custom_navwalker extends Walker_Nav_Menu {
