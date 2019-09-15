@@ -5,6 +5,12 @@
 get_header();
 
 get_template_part("partials/hero");
+get_template_part('partials/navbar');
+get_template_part('partials/summary');
+get_template_part('partials/about');
+get_template_part('partials/skills');
+get_template_part('partials/resume');
+get_template_part('partials/testimonials');
 
 ?>
 
