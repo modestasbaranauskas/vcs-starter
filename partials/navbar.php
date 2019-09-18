@@ -6,7 +6,6 @@
             <a class="js-scroll-trigger flex-logo" href="#hero">
             <?php
             $image = get_field('ho_image', 'option');
-            // dump($image);
             ?>    
             <img src="<?php echo $image['sizes']['logo']; ?>" alt="<?php echo $image['alt']; ?>">
             </a>
