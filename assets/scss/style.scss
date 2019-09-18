@@ -631,6 +631,7 @@ progress[value] {
 		text-decoration: none;
 		display: block;
 		padding-left: 40px;
+		text-transform: capitalize;
 
 		&:hover {
 			color: $light_section;
@@ -747,8 +748,18 @@ progress[value] {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-	background-color: $dark_section;
+	background-color: transparent;
 	border: 2px solid $exclusive_color;
+}
+
+#hero .owl-dots {
+	margin-top: -100px;
+	position: relative;
+}
+
+#hero button {
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 /****************************** BACK TO TOP ******************************/
@@ -758,12 +769,12 @@ progress[value] {
     right: 15px;
     z-index: 9999;
     text-align: center;
-    color: $field_background;
     cursor: pointer;
     border: 0;
     text-decoration: none;
     transition: opacity 0.2s ease-out;
 	opacity: 0;
+	color: rgba(75, 84, 86, 0.9);
 
 	i {
 		font-size: 2rem;
@@ -856,7 +867,6 @@ progress[value] {
 
 	.nav-menu-list.flex-container {
 		padding-left: 0;
-		margin-top: 30px;
 	}
 	
 	.main-nav-column {
@@ -879,7 +889,7 @@ progress[value] {
 	.gallery-container,
 	.contact-title,
 	.contact-container {
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 	}
 
@@ -946,7 +956,7 @@ progress[value] {
 @media all and (min-width: 320px) and (max-width: 767px) {
 
 	h1 {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		line-height: 1.25;
 	}
 
@@ -973,7 +983,7 @@ progress[value] {
 	.quotes-container,
 	.portfolio-container,
 	.contact-title {
-		padding: 70px 0 0;
+		padding: 80px 0 0;
 	}
 
 	.about-column-photo {
@@ -1018,7 +1028,6 @@ progress[value] {
 
 	.owl-theme .owl-nav.disabled+.owl-dots {
 		margin-top: 0;
-		padding-bottom: 50px;
 	}
 
 	.google-map {
