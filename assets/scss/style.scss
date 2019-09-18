@@ -262,10 +262,6 @@ h4 {
 /****************************** HERO ******************************/
 .hero-section {
 	min-height: 100vh;
-    // background-image: url(../images/background_03-min.jpg);
-    background-size: cover;
-    background-position: center;
-	padding: 0;
 
 	.hero-slide img {
 		display: block;
@@ -279,18 +275,38 @@ h4 {
 		text-align: center;
 		color: $light_section;
 		position: relative;
+		background-size: cover;
+		background-position: right center;
+		padding: 0;
 		
 		.hero-column h1 {
 			border-top: 2px solid $light_section;
 			border-bottom: 2px solid $light_section;
-			padding: 22px 0 22px 0;
 			padding: 15px 0 15px 0;
+			position: relative;
 		}
 	}
 }
 
 .hero-column {
-	margin-top: 210px;
+	margin-top: 95px;
+	display: inline-block;
+}
+
+.bg-overlay, .bg-overlay:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+	left: 0;
+	align-items: center;
+    justify-content: center;
+}
+
+.bg-overlay:before {
+    content: "";
+    opacity: .55;
+	background-color: $footer_color;
 }
 
 /****************************** HEADER MAIN NAVIGATION ******************************/
