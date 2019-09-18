@@ -1,5 +1,5 @@
 "use strict";
-// Slider
+// Slider Testimonials
 $(document).ready(function(){
 	$('.quotes-container').owlCarousel({
 		items: 1,
@@ -7,7 +7,21 @@ $(document).ready(function(){
 		loop: true,
 		mouseDrag: true,
 		touchDrag: true,
-		autoplay: true
+		autoplay: true,
+		autoplayTimeout: 7000
+	});
+});
+
+// Slider Hero
+$(document).ready(function(){
+	$('.hero-section').owlCarousel({
+		items: 1,
+		margin: 0,
+		loop: true,
+		mouseDrag: true,
+		touchDrag: true,
+		autoplay: true,
+		autoplayTimeout: 7000
 	});
 });
 
