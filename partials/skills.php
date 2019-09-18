@@ -21,6 +21,7 @@
             <div class="skills-info-block">
             <?php
                 if(have_rows('ms_skills_repeater')):
+                    $i = 1;
                     while(have_rows('ms_skills_repeater')):
                         the_row();
 
@@ -31,12 +32,13 @@
                             <h3 class="skills-info-text"><?php the_sub_field('heading'); ?></h3>
                             <progress value="<?php echo $progress ?>" max="100"><?php echo $progress ?>%</progress>
                             <style> 
-                            .skills:nth-child(<?php the_sub_field('row_number') ?>) progress[value]:after {
+                            .skills:nth-child(<?php echo $i ?>) progress[value]:after {
                                 left: <?php echo $progress ?>%;
                             }
                             </style>
                         </div>
                         <?php
+                        $i++;
                     endwhile;
                 endif;
             ?> 
