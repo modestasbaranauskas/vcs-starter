@@ -541,6 +541,18 @@ progress[value] {
 	z-index: 0;
 }
 
+.testimonials-photo img {
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 2px solid $light_section;
+	display: block;
+	max-width: 120px;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0px 5px 10px -1px rgba(112,112,112,1);
+	-moz-box-shadow: 0px 5px 10px -1px rgba(112,112,112,1);
+	box-shadow: 0px 5px 10px -1px rgba(112,112,112,1);
+}
+
 /****************************** PORTFOLIO ******************************/
 .portfolio-container {
 	text-align: center;
