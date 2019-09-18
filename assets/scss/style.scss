@@ -474,7 +474,6 @@ progress[value] {
 
 /****************************** RESUME ******************************/
 .resume-section {
-	// position: relative;
 
 	&:after {
 		content: '';
@@ -492,11 +491,14 @@ progress[value] {
 	max-width: 1020px;
 	padding: 100px 0 100px;
 	margin: 0 auto;
-	flex-wrap: wrap;
-	justify-content: center;
+	text-align: center;
 
 	p {
 		text-align: center;
+	}
+
+	a {
+		display: inline-block;
 	}
 }
 
