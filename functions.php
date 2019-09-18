@@ -43,7 +43,7 @@ function theme_stylesheets(){
 
 		//Registration
 		wp_register_style('fancybox', THEME_FOLDER . '/assets/css/jquery.fancybox.min.css', array(), false, 'all');
-		wp_register_style('owl-carousel', THEME_FOLDER . '/assets/css/jquery.fancybox.min.css', array('fancybox'), false, 'all');
+		wp_register_style('owl-carousel', THEME_FOLDER . '/assets/css/owl.carousel.min.css', array('fancybox'), false, 'all');
 		wp_register_style('owl-theme', THEME_FOLDER . '/assets/css/owl.theme.default.min.css', array('owl-carousel'), false, 'all');
 		wp_register_style('style', THEME_FOLDER . '/assets/css/style.css', array('owl-theme'), false, 'all');
 
