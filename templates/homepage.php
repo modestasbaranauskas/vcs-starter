@@ -10,7 +10,7 @@ get_template_part('partials/summary');
 get_template_part('partials/about');
 get_template_part('partials/skills');
 get_template_part('partials/resume');
-// get_template_part('partials/testimonials');
+get_template_part('partials/testimonials');
 get_template_part('partials/portfolio');
 get_template_part('partials/contact');
 
