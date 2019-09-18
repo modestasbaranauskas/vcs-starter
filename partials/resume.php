@@ -1,10 +1,14 @@
 <!-- RESUME start
 ================================================== -->
 <section id="resume" class="resume-section">
-    <div class="resume-container flex-container">
+    <div class="resume-container">
         <h2><?php the_field('r_heading'); ?></h2>
         <p><?php the_field('r_description'); ?></p>
-        <a href="#">Download resume</a>
+        <?php
+            $file = get_field('r_file');
+            // dump($file);
+        ?>
+        <a href="<?php echo $file['url']; ?>"><?php the_field('r_link_button'); ?></a>
     </div>
 </section>
 <!-- RESUME end
