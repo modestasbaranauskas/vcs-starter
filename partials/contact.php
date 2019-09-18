@@ -15,6 +15,9 @@
             <div>
                 <?php the_field('c_contact_info') ?>
             </div>
+            <div class="google-map">
+                <?php the_field('c_google_map'); ?>
+            </div>
         </div>
         <div class="contact-column">
             <div class="contact-form">
