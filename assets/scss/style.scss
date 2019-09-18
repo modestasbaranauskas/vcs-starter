@@ -64,7 +64,8 @@ $font_family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 3.75rem;
     font-weight: 700;
     line-height: 0.4;
-    margin: 0 0 93px;
+    line-height: 0.9;
+    margin: 0 0 45px;
     text-transform: uppercase;
 }
 
@@ -111,7 +112,9 @@ $font_family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 1.3333;
     text-transform: uppercase;
-    text-decoration: none;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
 }
 
 //====================== CSS START ============================//
