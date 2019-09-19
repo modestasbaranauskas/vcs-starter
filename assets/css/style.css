@@ -313,6 +313,10 @@ button i:hover {
   color: #2ecc71;
 }
 
+button.burger {
+  margin-right: 15px;
+}
+
 /****************************** SUMMARY ******************************/
 .summary-container {
   -webkit-box-pack: justify;
