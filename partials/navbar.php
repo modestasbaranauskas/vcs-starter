@@ -3,7 +3,7 @@
 <section id="nav" class="main-nav-section">
     <div class="main-nav-container flex-container">
         <div class="main-nav-logo">
-            <a class="js-scroll-trigger flex-logo" href="#hero">
+            <a class="js-scroll-trigger flex-logo" href="<?php bloginfo('wpurl'); ?>">
             <?php
             $image = get_field('ho_image', 'option');
             ?>    
