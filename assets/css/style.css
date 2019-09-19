@@ -791,7 +791,6 @@ progress[value]:after {
 @media all and (max-width: 1050px) {
   button {
     display: block;
-    margin-right: 15px;
     margin-top: 13px;
   }
   .main-nav {
