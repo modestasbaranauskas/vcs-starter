@@ -21,7 +21,7 @@ $(document).ready(function(){
 		mouseDrag: true,
 		touchDrag: true,
 		autoplay: true,
-		autoplayTimeout: 7000
+		autoplayTimeout: 5000
 	});
 });
 
