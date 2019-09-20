@@ -3,7 +3,7 @@
 	<footer id="footer" class="footer-section">
 		<div class="footer-container flex-container">
 			<div class="copyright-column">
-				<p><?php the_field('fo_copyright', 'option'); ?> &copy; COPYRIGHT 2017-<?php echo date("Y"); ?></p>
+				<p> &copy; <?php echo date("Y"); ?> <?php the_field('fo_copyright', 'option'); ?></p>
 			</div>
 			<div class="social-media-icon">
 				<ul class="social-media-nav flex-container">
